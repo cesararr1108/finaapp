@@ -1,0 +1,21 @@
+<ion-content class=" ion-no-padding">
+
+<div class="sub-contenido">
+  
+  <h1>Fina<b>App</b></h1>
+</div>
+<div class="contenido-form" >
+  <h2 >Validación de email</h2>
+  <h5>Por favor digita el código que enviamos a tú email</h5>
+  <form [formGroup]="formulario" (ngSubmit)="ValidarCodigo()">
+      <div>
+        <ion-input  mode="ios" type="text"  fill="outline" #codigo   (keyup)="NextInput($event)"   required formControlName="codigo" ></ion-input>
+      </div>
+  
+      <ion-button type="submit" shape="round" fill="solid" mode="ios" expand="block" color="danger-app"> 
+        <ion-label>Validar código</ion-label> 
+      </ion-button>
+  </form>
+</div>
+
+</ion-content>

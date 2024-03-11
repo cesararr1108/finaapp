@@ -1,0 +1,19 @@
+<ion-content class="ion-padding ion-text-center">
+  <div class="vertical-center">
+    <ion-button>
+      <ion-icon slot="start" name="star"></ion-icon>
+      Validar por email
+    </ion-button>
+    <ion-button>
+      <ion-icon slot="start" name="star"></ion-icon>
+      Validar por numero
+    </ion-button>  
+
+    <form [formGroup]="miFormulario" (ngSubmit)="onSubmit()">
+    <ion-input label="Email" mode="ios"  formControlName="email" type="email" label-placement="floating" fill="outline" placeholder="Ingrese el email" required></ion-input>
+    <ion-input label="Telefono"  mode="ios"  formControlName="telefono" label-placement="floating" fill="outline" placeholder="Ingrese el numero de telefono" required></ion-input>
+    </form>
+
+  </div>
+
+</ion-content>

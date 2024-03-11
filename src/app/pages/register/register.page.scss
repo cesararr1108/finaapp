@@ -1,0 +1,47 @@
+ion-content{
+    height: 100vh;
+    font-family: 'Roboto Slab', sans-serif;
+}
+ion-back-button{
+    color: #7a7a7a;
+}
+ion-content{
+    height: 99vh; 
+   // --background: #FF725E;
+}
+.container{
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
+.content-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img-register{
+    height: 30vh;
+}
+
+ion-input{
+    padding: none;
+    margin-top: 10px; 
+    border-bottom: 1px solid #c6c6c6; /* Borde inferior gris suave */
+    --border-color: transparent; /* Evita el borde en los lados */
+    --background: none; /* Fondo transparente */
+    --box-shadow: none; /* Sin sombra */
+    --color: #333333; /* Color del texto */
+}
+ion-item{
+    border: none !important;;
+    margin-top: 10px;
+    text-align: center;
+}
+.text-dark-1{
+    color: #7a7a7a;
+}
+
+ion-button{
+    width: 99%;
+    margin-top: 40px;
+}

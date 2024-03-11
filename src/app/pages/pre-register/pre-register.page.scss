@@ -1,0 +1,21 @@
+ion-content{
+    height: 100vh;
+    padding: 15px;
+}
+.vertical-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+/* Estilos para centrar verticalmente los elementos */
+ion-grid {
+    height: 100vh; /* Hace que el ion-grid ocupe todo el espacio disponible verticalmente */
+}
+  
+
+ion-button{
+    width: 100%;
+}

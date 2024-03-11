@@ -1,0 +1,56 @@
+
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contenido-form{
+    margin-top: 30px;
+    padding: 20px;
+}
+h2{
+    color: rgb(105, 105, 105);
+ }
+ h5{
+    color: rgb(154, 154, 154);
+ }
+ form{
+    margin-top: 30px;
+ }
+.sub-contenido{
+    h1{
+        font-weight: bolder;
+        font-size: 3.3em;
+        color: white;
+    }
+
+    background: var(--ion-color-danger-app);
+    border-radius: 0 0 50% 50%; /* Bordes redondeados para simular el "mordisco" */
+    z-index: 1; /* Asegura que el "mordisco" esté sobre el contenido */
+    height: 200px;
+}
+ion-content{
+   height:   100vh;
+}
+ion-button{
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+ion-input{
+    border: 1px solid rgb(255, 182, 182);
+    --box-shadow-inset: inset 0 1px 2px rgba(0, 0, 0, 0.1); 
+    margin: 2px;
+    font-size: xx-large;
+    border-radius: 10px;
+    --padding-end:10px;
+    --padding-start:10px;
+    --padding-top :10px;
+    --padding-bottom:10px;
+    --color: rgb(80, 80, 80);
+    flex: 1; /* Hace que cada input ocupe el mismo espacio disponible */
+    margin-right: 5px; /* Añade un espacio entre los input (opcional) */
+    text-align: center;
+    color: var(--ion-color-danger-app);
+}

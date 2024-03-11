@@ -1,0 +1,7 @@
+{
+  "name": "finaapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
