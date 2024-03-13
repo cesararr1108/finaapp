@@ -15,13 +15,13 @@ const routes: Routes = [
     loadChildren: () => import('./pages/register/register.module').then( m => m.RegisterPageModule)
   },
   {
-    path: 'pre-register',
-    loadChildren: () => import('./pages/pre-register/pre-register.module').then( m => m.PreRegisterPageModule)
-  },
-  {
     path: 'modal-validacion-email',
     loadChildren: () => import('./components/modal-validacion-email/modal-validacion-email.module').then( m => m.ModalValidacionEmailPageModule)
-  }
+  },
+  {
+    path: 'auth',
+    loadChildren: () => import('./pages/auth/auth/auth.module').then( m => m.AuthPageModule)
+  },
 ];
 @NgModule({
   imports: [

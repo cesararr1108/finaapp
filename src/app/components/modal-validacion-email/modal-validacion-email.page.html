@@ -1,7 +1,6 @@
-<ion-content class=" ion-no-padding">
+<ion-content [fullscreen]="true" class="ion-no-padding" mode="ios"  >
 
 <div class="sub-contenido">
-  
   <h1>Fina<b>App</b></h1>
 </div>
 <div class="contenido-form" >
@@ -12,7 +11,7 @@
         <ion-input  mode="ios" type="text"  fill="outline" #codigo   (keyup)="NextInput($event)"   required formControlName="codigo" ></ion-input>
       </div>
   
-      <ion-button type="submit" shape="round" fill="solid" mode="ios" expand="block" color="danger-app"> 
+      <ion-button type="submit" shape="round" fill="solid" mode="ios" expand="block" color="danger"> 
         <ion-label>Validar código</ion-label> 
       </ion-button>
   </form>

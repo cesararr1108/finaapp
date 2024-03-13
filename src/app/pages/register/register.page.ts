@@ -6,6 +6,7 @@ import { FormBuilder, FormGroup, Validators ,ReactiveFormsModule } from '@angula
 import { SweetAlertService } from 'src/app/services/sweet-alert.service';
 import { ApiService } from 'src/app/services/auth.service';
 import {  ModalValidacionEmailPage } from '../../components/modal-validacion-email/modal-validacion-email.page';
+import { UsuariosService } from 'src/app/services/usuarios.service';
 
 
 
@@ -27,7 +28,8 @@ export class RegisterPage implements OnInit {
     private formBuilder: FormBuilder,
     private swal:SweetAlertService,
     private serviceAuth:ApiService,
-    private modalController: ModalController) { }
+    private modalController: ModalController,
+    private usuario:UsuariosService) { }
 
   ngOnInit() {
     this.miFormulario = this.formBuilder.group({
@@ -45,9 +47,13 @@ export class RegisterPage implements OnInit {
   onSubmit(){ 
     if (this.miFormulario.valid) {
       // Lógica para enviar el formulario
-      console.log('Formulario válido:', this.miFormulario.value);
+      this.usuario.crearUsuario(this.miFormulario.value)
+      .subscribe(resp=>{
+        console.log(resp)
+        this.router.navigate(['/auth']);
+      })
     } else {
-      console.log('Formulario inválido',this.miFormulario.valid);
+      this.swal.showAlert("Validacion","Completa los campos del formulario")
     }
   }
   ValidarEmail(){
@@ -86,7 +92,10 @@ export class RegisterPage implements OnInit {
     modal.onDidDismiss().then((data:any) => {
       if (data && data.data) {
         if(data.data.codigoValido){
-          this.codigoValido=true
+          this.codigoValido=true;
+  
+          let email=this.miFormularioValidacion.get('email')?.value;
+          this.miFormulario.get('email')?.setValue(email);
         } 
       }
     });
@@ -94,5 +103,5 @@ export class RegisterPage implements OnInit {
     return await modal.present();
   }
 
-
+ 
 }

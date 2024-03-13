@@ -1,9 +1,9 @@
-<!-- register.page.html -->
-
 <ion-buttons slot="start">
   <ion-back-button defaultHref="/">Atras</ion-back-button>
 </ion-buttons>
-<ion-content class="ion-no-padding">
+<ion-content [fullscreen]="true" class="ion-padding" color="danger-app"  >
+
+
   <ion-label color=" ion-text-center ion-padding">
     <h1 class="ion-padding">Registro</h1>
   </ion-label>
@@ -21,10 +21,10 @@
 
     <form [formGroup]="miFormulario" (ngSubmit)="onSubmit()" *ngIf="codigoValido">
       <ion-list>
-          <ion-input label="Usuario"  mode="ios" formControlName="usuario" fill="outline" placeholder="Ingrese el nombre de usuario" required></ion-input>
-          <ion-input label="Nombres"  mode="ios" formControlName="nombres"label-placement="floating" fill="outline" placeholder="Ingrese su nombre" required></ion-input>
-          <ion-input label="Clave"    mode="ios" formControlName="clave" type="password" label-placement="floating" fill="outline" placeholder="Ingrese la clave" required></ion-input>
-          <ion-input label="Email"    mode="ios" formControlName="email" type="email" label-placement="floating" fill="outline" required></ion-input>
+          <ion-input label="Usuario"  mode="ios" formControlName="usuario" type="text"     label-placement="floating" fill="outline" placeholder="Ingrese el nombre de usuario" required></ion-input>
+          <ion-input label="Nombres"  mode="ios" formControlName="nombres" type="text"     label-placement="floating" fill="outline" placeholder="Ingrese su nombre" required></ion-input>
+          <ion-input label="Clave"    mode="ios" formControlName="clave"   type="password" label-placement="floating" fill="outline" placeholder="Ingrese la clave" required></ion-input>
+          <ion-input label="Email"    mode="ios" formControlName="email"   type="email"    label-placement="floating" fill="outline" required></ion-input>
           <ion-button expand="block" mode="ios" shape="round" type="submit"  color="danger">Registrar</ion-button>
         </ion-list>
       <ion-list>

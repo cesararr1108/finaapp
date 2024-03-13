@@ -3,7 +3,7 @@ ion-content{
     font-family: 'Roboto Slab', sans-serif;
 }
 ion-back-button{
-    color: #7a7a7a;
+    color: var(--ion-color-blue-green-app)
 }
 ion-content{
     height: 99vh; 
@@ -11,7 +11,6 @@ ion-content{
 }
 .container{
     padding: 10px;
-    background-color: rgb(255, 255, 255);
 }
 .content-img{
     display: flex;
@@ -38,7 +37,7 @@ ion-item{
     text-align: center;
 }
 .text-dark-1{
-    color: #7a7a7a;
+    color:var(--ion-color-blue-green-app)
 }
 
 ion-button{

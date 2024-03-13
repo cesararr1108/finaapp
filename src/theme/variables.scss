@@ -74,47 +74,10 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
-
-	--ion-color-danger-app: #FF725E;
-	--ion-color-danger-app-rgb: 255,114,94;
-	--ion-color-danger-app-contrast: #f6f6f6;
-	--ion-color-danger-app-contrast-rgb: 0,0,0;
-	--ion-color-danger-app-shade: #e06453;
-	--ion-color-danger-app-tint: #ff806e;
-
-	--ion-color-blue-green-app: #385A64;
-	--ion-color-blue-green-app-rgb: 56,90,100;
-	--ion-color-blue-green-app-contrast: #ffffff;
-	--ion-color-blue-green-app-contrast-rgb: 255,255,255;
-	--ion-color-blue-green-app-shade: #314f58;
-	--ion-color-blue-green-app-tint: #4c6b74;
-
 }
-/* danger app*/
-
-.ion-color-danger-app {
-	--ion-color-base: var(--ion-color-danger-app);
-	--ion-color-base-rgb: var(--ion-color-danger-app-rgb);
-	--ion-color-contrast: var(--ion-color-danger-app-contrast);
-	--ion-color-contrast-rgb: var(--ion-color-danger-app-contrast-rgb);
-	--ion-color-shade: var(--ion-color-danger-app-shade);
-	--ion-color-tint: var(--ion-color-danger-app-tint);
-}
-
-.ion-color-blue-green-app {
-	--ion-color-base: var(--ion-color-blue-green-app);
-	--ion-color-base-rgb: var(--ion-color-blue-green-app-rgb);
-	--ion-color-contrast: var(--ion-color-blue-green-app-contrast);
-	--ion-color-contrast-rgb: var(--ion-color-blue-green-app-contrast-rgb);
-	--ion-color-shade: var(--ion-color-blue-green-app-shade);
-	--ion-color-tint: var(--ion-color-blue-green-app-tint);
-}
-
+/*
 @media (prefers-color-scheme: dark) {
-  /*
-   * Dark Colors
-   * -------------------------------------------
-   */
+
 
   body {
     --ion-color-primary: #428cff;
@@ -180,21 +143,10 @@
     --ion-color-light-shade: #1e2023;
     --ion-color-light-tint: #383a3e;
   
-  --ion-color-danger-app: #FF725E;
-	--ion-color-danger-app-rgb: 255,114,94;
-	--ion-color-danger-app-contrast: #000000;
-	--ion-color-danger-app-contrast-rgb: 0,0,0;
-	--ion-color-danger-app-shade: #e06453;
-	--ion-color-danger-app-tint: #ff806e;
   }
 
-  /*
-   * iOS Dark Theme
-   * -------------------------------------------
-   */
-
   .ios body {
-    --ion-background-color: #000000;
+    --ion-background-color: #ffffff;
     --ion-background-color-rgb: 0,0,0;
 
     --ion-text-color: #ffffff;
@@ -232,10 +184,6 @@
   }
 
 
-  /*
-   * Material Design Dark Theme
-   * -------------------------------------------
-   */
 
   .md body {
     --ion-background-color: #121212;
@@ -275,7 +223,7 @@
     --ion-card-background: #1e1e1e;
   }
 }
-
+*/
 html {
   /* 
    * For more information on dynamic font scaling, visit the documentation:

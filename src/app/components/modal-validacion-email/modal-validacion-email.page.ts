@@ -28,7 +28,10 @@ export class ModalValidacionEmailPage implements OnInit {
     this.formulario = this.formBuilder.group({
       codigo:['']
     });
-    this.focusInput();
+    setTimeout(() => {
+      this.focusInput();
+    }, 100);
+   
   }
 
   ValidarCodigo(){

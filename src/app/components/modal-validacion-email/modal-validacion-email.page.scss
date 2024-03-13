@@ -25,7 +25,7 @@ h2{
         color: white;
     }
 
-    background: var(--ion-color-danger-app);
+    background: var(--ion-color-danger);
     border-radius: 0 0 50% 50%; /* Bordes redondeados para simular el "mordisco" */
     z-index: 1; /* Asegura que el "mordisco" esté sobre el contenido */
     height: 200px;
@@ -52,5 +52,5 @@ ion-input{
     flex: 1; /* Hace que cada input ocupe el mismo espacio disponible */
     margin-right: 5px; /* Añade un espacio entre los input (opcional) */
     text-align: center;
-    color: var(--ion-color-danger-app);
+    color: var(--ion-color-danger);
 }

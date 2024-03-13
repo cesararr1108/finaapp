@@ -27,6 +27,10 @@ export class LoginPage implements OnInit {
   irRegistro(){
     this.router.navigate(['/register']);
   }
+  auth(){
+    this.router.navigate(['/auth']);
+  }
+
   avanzar() { console.log(this.swiper)
     this.swiper?.slideNext();
   }
