@@ -3,5 +3,8 @@
   "integrations": {
     "capacitor": {}
   },
-  "type": "angular"
+  "type": "angular",
+  "scripts": [
+    "node_modules/chart.js/dist/Chart.min.js"
+  ]
 }

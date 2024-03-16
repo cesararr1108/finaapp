@@ -33,4 +33,26 @@
   .swal2-container  h2{
     font-size: 1.2em !important;
 }
+/*alertas*/
+.alert-danger{
+ background-color: rgb(255, 244, 244);
+ box-shadow: 6px 6px 6px rgb(255, 238, 238);
+
+ ion-icon{
+   font-size: 1.7rem;
+ }
+ ion-button{
+  align-items: end;
+ }
+}
+
+
+
+.header-content {
+  display: flex;
+  align-items: center; /* Centra verticalmente */
+  text-align: left !important;
+  color: var(--ion-color-danger);
+}
+
 
