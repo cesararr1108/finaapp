@@ -21,5 +21,17 @@ export class ApiService {
 
     return this.http.post<any>(`${this.apiUrl}/auth/validarcodigoemail`,{ email,codigo});
   }
+  
+  login(usuario:string,clave:string){
+
+    let body=new FormData();
+
+    body.append('usuario',usuario);
+    body.append('clave',clave);
+
+    return this.http.post(`${this.apiUrl}/auth`,body);
+
+  }
+
 
 }

@@ -1,0 +1,54 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto Slab', sans-serif;
+    width: 100%;
+
+}
+h1{
+    font-size: 3em;
+    font-weight: 900;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.logo-f-letter{
+    color: var(--ion-color-dark);
+}
+.logo-l-letter{
+    color: var(--ion-color-danger);
+}
+
+img{
+    max-height: 250px;
+    margin-bottom: 5px;
+}
+ion-label{
+    h2{
+        font-size: x-large;
+    }
+ }
+
+ion-input{
+    ion-icon{
+        margin-left: 5px;
+    }
+    padding: 3px;
+    border-radius: 15px;
+    border:1px solid rgb(255, 147, 147);
+   margin-bottom: 10px;
+
+}
+ion-button{
+    margin-top: 10px;
+    width: 100%;
+}
+
+ion-content{
+    height: 99vh;
+   // --background: #FF725E;
+}
+form{
+    margin: 2px;
+}
