@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'; // Importa ReactiveFormsModule
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { BaseChartDirective } from 'ng2-charts';
 
 
 
@@ -17,7 +18,8 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
     IonicModule.forRoot(), 
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule ],
+    HttpClientModule ,
+    BaseChartDirective],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, HttpClient],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA] // Agrega aquí el CUSTOM_ELEMENTS_SCHEMA

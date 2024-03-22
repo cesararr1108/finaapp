@@ -74,8 +74,27 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+
+	--ion-color-danger-sub: #ffd6d6;
+	--ion-color-danger-sub-rgb: 255,214,214;
+	--ion-color-danger-sub-contrast: #000000;
+	--ion-color-danger-sub-contrast-rgb: 0,0,0;
+	--ion-color-danger-sub-shade: #e0bcbc;
+	--ion-color-danger-sub-tint: #ffdada;
+  
+
 }
-/*
+
+.ion-color-danger-sub {
+  --ion-color-base: var(--ion-color-danger-sub);
+  --ion-color-base-rgb: var(--ion-color-danger-sub-rgb);
+  --ion-color-contrast: var(--ion-color-danger-sub-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-danger-sub-contrast-rgb);
+  --ion-color-shade: var(--ion-color-danger-sub-shade);
+  --ion-color-tint: var(--ion-color-danger-sub-tint);
+}
+
 @media (prefers-color-scheme: dark) {
 
 
@@ -223,7 +242,7 @@
     --ion-card-background: #1e1e1e;
   }
 }
-*/
+
 html {
   /* 
    * For more information on dynamic font scaling, visit the documentation:

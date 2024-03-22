@@ -54,5 +54,17 @@
   text-align: left !important;
   color: var(--ion-color-danger);
 }
+ion-header{
+  margin-bottom: 30px;
+}
 
+.logo-f-letter{
+  color: var(--ion-color-dark);
+}
+.logo-l-letter{
+  color: var(--ion-color-danger);
+}
 
+ion-content {
+  background-color: rgba(var(--ion-color-danger-rgb), 0.5); /* 0.5 es la opacidad (50%) */
+}
